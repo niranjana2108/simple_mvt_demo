@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students List</title>
+</head>
+<body>
+    <h1>Students</h1>
+
+    <ul>
+        {% for stu in students %}
+            <li>{{ stu.id }} – {{ stu.name }} ({{ stu.age }} yrs)</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
